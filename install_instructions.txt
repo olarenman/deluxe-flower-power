@@ -1,0 +1,15 @@
+Krav:
+
+RasberryPi
+Tellstick Duo
+DlxFlwPwr
+
+Installation:
+
+Sätt upp pi med rasbian.
+Fixa apache, php och mysql.
+Installera tellstick med tdtool.
+Sätt upp databas enligt script.
+Schemalägg script med cron.
+Placera www filer i apache root.
+Tuta och kör!
