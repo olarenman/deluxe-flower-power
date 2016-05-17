@@ -9,7 +9,7 @@ Installation:
 Sätt upp pi med rasbian.
 Fixa apache, php och mysql.
 Installera tellstick med tdtool.
-Synkronisera tellstick med brytare.
+Synkronisera tellstick med brytare och ID=1.
 Sätt upp databas enligt script.
 Schemalägg script med cron.
 Placera www filer i apache root.
