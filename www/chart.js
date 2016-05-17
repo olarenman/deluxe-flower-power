@@ -13,7 +13,7 @@ function drawChart() {
     var data = new google.visualization.DataTable();
 
     data.addColumn('datetime', 'Tid');
-    data.addColumn('number', 'Fuktighet');
+    data.addColumn('number', 'Fuktighet (%)');
     
     for(var i = 0; i < jsonData.length; i++) {
 	var t = jsonData[i].time.split(/[- :]/);
