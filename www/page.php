@@ -2,6 +2,9 @@
 <html>
     <head>
         <title>DlxFlwPwr</title>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>   
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="/chart.js"></script>
         <link href="reset.css" rel="stylesheet" type="text/css"/>
         <link href="main.css" rel="stylesheet" type="text/css"/>
         <meta charset="utf-8" />
@@ -23,6 +26,8 @@
                 }
             ?>
         </div>
+        
+        <div id="curve_chart" style="width: 900px; height: 500px"></div>
     
     </body>
 </html>
