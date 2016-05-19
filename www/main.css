@@ -219,7 +219,7 @@ body {
     margin-bottom: 1em;
 }
 
-#centerdiv {
+.centerdiv {
     clear: left;
     width: 89%;
     border: 1px solid black;
@@ -232,16 +232,66 @@ body {
     margin-top: 1.5em;
 }
 
-#centerdiv img {
+#centerhigh img {
     margin-top: 2em;
     height: 10em;
     align: center;
 }
 
-#vattna {
-    margin-left: 10em;
+#centerlow h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
+#vattnadiv {
+    //border: 1px solid black;
+    height: 5em;
+    margin-left: 65%;
+
+}
+
+#vattnadiv img{
+    height: 100%;
+}
+
+#blomvattna {
+    margin-left: 65%;
+    //border: 1px solid black;
+    display: block;
+        margin-bottom: 1.5em;
+}
+
+#centerleft {
+    //border: 1px solid black;
+    margin-left: 5em;
+    margin-top: 4em;
+    float: left;
+}
+
+#centerleft h1{
+    font-size: 2em;
+}
+
+
+#centerleft h2{
+    text-align: center;
+    font-size: 5em;
+}
+
+#centerleft h3{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 3em;
+}
+
+#curve_chart {
+    width: 96%;
+    height: 30em;
+    margin-bottom: 2em;
+    margin-left: 2%;
+}
 
 
 
