@@ -59,12 +59,18 @@ void SystemClock_Config(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
+/* **************************************************
+Delayfunktion för att få mikrosekunder som behövs för sändning.
+Kalibreras nedan i while-loopen.
+*/
 void US_Delay(int u){
   u=(u*DELAYMULTIPLIER)+DELAYOFFSET;
   for(;u>=0;u--){ 
   }
 }
-
+/* **************************************************
+Metod för att skicka nollor.
+*/
 void sendZero(){
   HAL_GPIO_WritePin(GPIOA, TX_Pin, GPIO_PIN_SET); // TX Set High
   US_Delay(PULSE);
@@ -74,7 +80,9 @@ void sendZero(){
   US_Delay(PULSE);
 
 }
-
+/* **************************************************
+Metod för att skicka ettor.
+*/
 void sendOne(){
   HAL_GPIO_WritePin(GPIOA, TX_Pin, GPIO_PIN_RESET); // TX Set Low
   US_Delay(PULSE);
@@ -84,7 +92,9 @@ void sendOne(){
   US_Delay(PULSE);
 
 }
-
+/* **************************************************
+Skickar preamble dvs 16st 1:or 
+*/
 void Preamble(){
   for(int i = 0; i < 16; i++){
     sendOne();
@@ -92,13 +102,17 @@ void Preamble(){
 }
 
 
-
+/* **************************************************
+Skickar postamble, dvs 8st 0:or
+*/
 void Postamble(){
   for(int i = 0; i < 8; i++){
     sendZero();
   }
 }
-
+/* **************************************************
+Sendningsfunktion som skickar nibs, dvs 4-bitar
+*/
 void sendNib(char n){
   if((n & 0x1) > 0) sendOne(); else sendZero();
   if((n & 0x2) > 0) sendOne(); else sendZero();
@@ -107,11 +121,16 @@ void sendNib(char n){
 //  US_Delay(2000); debug
 }
 
+/* **************************************************
+Skickar en syncnib
+*/
 void Sync(){
   sendNib(0xA);
 
 }
-
+/* **************************************************
+Räknar ut checksumman för meddelandes som ska skickas.
+*/
 void CheckSum(){
   char check=0;
   char MSB=0;
@@ -143,7 +162,9 @@ void CheckSum(){
   */
  
 }
-
+/* **************************************************
+Huvudfunktion för att skicka det som ligger i MESSAGE()
+*/
 void Send(){
   HAL_GPIO_WritePin(GPIOA, LED1_Pin, GPIO_PIN_SET); // Led 
   Preamble();
@@ -158,6 +179,10 @@ void Send(){
   HAL_GPIO_WritePin(GPIOA, LED1_Pin, GPIO_PIN_RESET); // Led 
 }
 
+/* **************************************************
+Tar in sensorvärdet och omvandlar till procent.
+Sedan lagras värdet på rätt plats i MESSAGE().
+*/
 void moisture(int m){
   char moist=0; 
   char MSB=0;
