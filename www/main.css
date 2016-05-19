@@ -1,11 +1,271 @@
-h1 {
-    font-size: 2em;
-    margin-top:0.5em;
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #3CB371; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#3CB371, #98FB98); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3CB371, #98FB98); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3CB371, #98FB98); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3CB371, #98FB98); /* Standard syntax */
 }
 
-#loginDiv {
+#logintop h1 {
+    font-size: 2.5em;
+    margin-left: 2em;
+    margin-top: 0.7em;
+    color: white;
+    text-shadow: 0.05em 0.05em black;
+    position: absolute;
+}
+
+#loginBig {
+
+   width: 32em;
+   margin: 3em auto;
+}
+
+#logintop {
+    height: 5em;
+    position:relative;
+}
+
+#flowerpot {
+    float: left;
+    height: 4em;
+    position: absolute;
+    bottom: 0px;
+}
+
+#flowerpot img {
+    height: 100%;
+}
+
+#login p{
+    margin-bottom: 0.1em;
+    margin-top: 0.2em;
+}
+
+#login div{
+    width: 50%;
+    margin: auto;
     text-align:center;
 }
 
+#login h1 {
+    font-size: 1.8em;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    font-family: 'Parparys', fantasy, sans-serif;
+    font-weight: bold;
+    text-align:center;
+}
+
+.logfeild {
+    margin-left: 1.5em;
+
+}
+
+#loginDiv {
+
+    width: 32em;
+    margin: auto;
+    background-color: #D3D3D3;
+    padding-bottom: 0.4em;
+    padding-top: 0.4em;
+    border-radius: 0.5em;
+
+}
+
+#loginbutton {
+    margin-top: 0.3em;
+    
+}
+
+#loginbutton:hover {
+    box-shadow: 0.1em 0.2em 0.1em #888888;
+}
+
+
+
+#center {
+    background-color: #D3D3D3;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+#pageBig {
+    margin: auto;
+    width: 65em;
+    //border: 1px solid black;
+}
+
+#upper {
+    position: relative;
+    height: 7em;
+    //border: 1px solid black;
+}
+
+#upper h1 {   
+    position: absolute;
+    bottom: 0em;
+    font-size: 3em;
+    margin: 0.2em 2.2em;
+    color: white;
+    text-shadow: 0.05em 0.05em black;
+}
+
+
+#inlogged {
+    float: right;
+    margin-top: 5.2em;
+    margin-bottom: 0.2em;
+    margin-right: 0.2em;
+    //border: 1px solid black;  
+}
+
+#inlogged div {
+    //border: 1px solid black;
+    display: inline-block;
+    float: left;
+    margin-top: 0.3em;
+}
+
+#inlogged p {
+    color: white;
+    font-size: 1.2em;
+    margin-right: 0.5em;
+    text-shadow: 0.03em 0.03em black;
+}
+
+#logoutbutton{
+   float: right; 
+    color: black;
+    font-weight: bold;
+}
+   
+   
+
+#flower {
+    position: absolute;
+    bottom: 0em;
+    height: 80%;
+    float: left;
+    //border: 1px solid white;    
+}
+
+#flower img {
+    height: 100%;
+}
+
+#text {
+    //border: 1px solid black;
+}
+
+#text p {
+    font-size: 1.2em;
+    margin-top: 1.3em;
+    margin-left: 1em;
+}
+
+#users {
+    margin-left: 5%;
+    width: 40%;
+}
+
+#users p{
+    text-align: center;
+}
+
+.hej p{
+    float:left;
+    margin-right: 0.5em;
+}
+
+.hej {
+    margin-left: 3em;
+    margin-top: 0.5em;
+}
+
 #laggTill {
+
+    width:40%;
+    margin-left: 9%;
+}
+
+#laggTill div{
+    margin-left: 7.5em;
+    margin-top: 0.2em;
+}
+
+.admindiv {
+    min-height: 13em;
+    border: 1px solid black;
+    margin-bottom: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0.0em 0.0em 1em #888888;
+    margin-top: 1.5em;
+    float: left;
+    background: linear-gradient(#cdcdcd, #f9f9f9);
+    padding-bottom: 1em;
+}
+
+.admindiv h3{
+    text-align: center;
+    margin-top: 0.7em;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+#centerdiv {
+    clear: left;
+    width: 89%;
+    border: 1px solid black;
+    margin-left: 5%;
+    background: linear-gradient(#cdcdcd, #f9f9f9);
+    box-shadow: 0.0em 0.0em 1em #888888;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+    min-height: 5em;
+    margin-top: 1.5em;
+}
+
+#centerdiv img {
+    margin-top: 2em;
+    height: 10em;
+    align: center;
+}
+
+#vattna {
+    margin-left: 10em;
+}
+
+
+
+
+#ph {
+    padding: 2em;
+    border: 1px solid black;
+    width: 15em;
+    height: 5em;
+    font-weight: bold;
+    font-size: 4em;
+    font-family: Arial;
+    background-color: black;
+}
+
+#ph1 {
+    padding: 0.1em;
+    color: white;
+    float: left;
+    display: inline-block;
+}
+
+#ph2 {
+    padding: 0.1em;
+    display: inline-block;
+    background-color: orange;
+    border-radius: 0.1em;
 }

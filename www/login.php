@@ -35,6 +35,6 @@ if (isset($_SESSION['username'])) {
     include 'page.php';
 }
 else {
+echo '<script> alert("Felaktigt användarnamn och/eller lösenord")</script>';
 include 'index.php';
-
 }
